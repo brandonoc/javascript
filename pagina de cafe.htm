@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<!-- this script got from www.javascriptfreecode.com coded by: Kerixa Inc. -->
+<!-- This script opens a separate window for the locations you give it.
+Pages are neat but pictures make a cool photo album. Change the 
+attributes that read menubar=0,toolbar=0, etc... and Width & Height 
+to meet your needs.  Make sure you place the URL's you want to go 
+to and their names below.-->
+
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
+function surfto(form) 
+{
+  var myindex=form.dest.selectedIndex
+  window.open(form.dest.options[myindex].value,"main","menubar=1,toolbar=0,location=0,directories=0,status=1,copyhistory=0,width=235,height=235");
+}
+//-->
+</SCRIPT>
+<CENTER>
+<FORM NAME="myform">
+  <SELECT NAME="dest" SIZE=1>
+    <OPTION VALUE="http://www.coffeecup.com">CoffeeCup Software
+    <OPTION VALUE="http://www.tmcm.com">Too Much Coffee Man
+    <OPTION VALUE="http://www.netscape.com">Netscape
+    <OPTION VALUE="http://www.javakhafan.7p.com">InfoSeek
+  </SELECT>
+<P>
+<INPUT TYPE="BUTTON" VALUE="Go  !" onClick="surfto(this.form)">
+</FORM>
+</CENTER><a target='_blank' href='http://www.javascriptfreecode.com/' style='font-size: 8pt; text-decoration: none'>JavaScript Codes</a>
+</body>
+</html>
